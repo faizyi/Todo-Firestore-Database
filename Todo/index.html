@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="body">
+    <div class="header">
+
+        <div class="heading">
+            <h1>Todo Website</h1>
+        </div>
+
+        <div class="header-icon">
+
+            <div class="home">
+                <abbr title="Home">
+                    <ion-icon class="home-icon" name="home-sharp"></ion-icon>
+                </abbr>
+            </div>
+
+            <div class="user-details">
+                <abbr title="User Details">
+                <ion-icon class="user-icon" name="person-circle-sharp"></ion-icon></abbr>
+            </div>
+        </div>
+
+        <!-- <button class="logOut">Log out</button> -->
+    </div>
+
+
+    <!-- user-details -->
+    <div class="info">
+
+    <div id="user-info">
+
+        <div class="info-heading">
+            <h1>User Info</h1>
+        </div>
+        <!-- info-header -->
+        <div class="info-header">
+
+            
+            <div class="user-pic">
+                <ion-icon class="pic-icon"  name="person-circle-sharp"></ion-icon>
+                <p class="user-name"></p>
+            </div>
+            <div class="logout-btn">
+                <button class="logout-user"><ion-icon name="log-out-outline"></ion-icon>Log out</button>
+            </div>
+
+    </div>
+
+        <div class="info-fields">
+            <label>Your Name:</label>
+            <input class="user-name-field" type="text" name="" id="">
+        </div>
+
+        <div class="user-email-password">
+
+            <div class="user-email">
+                <label>Your Email:</label>
+                <input class="user-email-field" disabled type="text" name="" id="">
+                <p class="not-update">Can not Update.</p>
+            </div>
+
+            <div class="user-password">
+                <label>Your Password:</label>
+                <div class="eye">
+                <input class="user-password-field" type="password" name="" id="">
+                <img class="eye-icon" width="18px" src="./../IMG/Hide.png" alt="">
+            </div>
+            </div>
+
+        </div>
+<!-- update btn -->
+        <div class="update-btn">
+
+            <div class="Update-Successfully">
+            <p class="update-icon"></p>
+        </div>
+
+        <div class="update-info">
+            <button disabled class="update">Update</button>
+        </div>
+
+        </div>
+        
+        
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+    <div class="todo-container">
+<!-- todo-input -->
+        <div class="todo-input">
+            <form class="form">
+                <input class="todoInput" placeholder="Add a new task...." type="text" name="" id="">
+                <button id="add-btn" class="add-btn" type="submit"><abbr title="Add Todo"><ion-icon name="arrow-down-outline"></ion-icon></abbr></button>
+                <!-- <input value="" type="hidden" name="" id="saveindex"> -->
+            </form>
+        </div>
+        <hr class="hr">
+
+
+        <div class="todo-ul">
+            <ul class="todo-box">
+           
+            </ul>
+        </div>
+
+
+        <div class="clear-btn">
+            <button class="clearAll">Clear All</button>
+        </div>
+
+
+    </div>
+
+
+
+  
+    
+
+    <script type="module" src="app.js"></script>
+    <script type="module"  src="todo.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
